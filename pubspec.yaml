@@ -1,0 +1,111 @@
+name: eshop
+description: "A new Flutter project."
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+#--------------- PACKAGES --------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+  
+  # Utility Packages
+
+
+
+  # Icons
+  iconsax: ^0.0.0
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  get: ^4.6.5
+
+
+  # Product Specific
+
+
+
+
+#--------------- PACKAGES END --------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+#--------------- LOCAL ASSETS --------------#
+  assets:
+    - assets/icons/brands/
+    - assets/images/
+    - assets/fonts/
+
+#--------------- LOCAL FONTS --------------#    
+  
+  fonts: 
+    - family: Poppins 
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+        - asset: assets/fonts/Poppins-BlackItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+        - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset: assets/fonts/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins-ThinItalic.ttf
+          style: italic
+
+       
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
