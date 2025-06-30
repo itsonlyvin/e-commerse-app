@@ -1,6 +1,6 @@
-import 'package:eshop/home.dart';
-import 'package:eshop/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:t_store/home.dart';
+import 'package:t_store/utils/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
