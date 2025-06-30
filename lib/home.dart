@@ -10,8 +10,8 @@ class HomeApp extends StatefulWidget {
 class _HomeAppState extends State<HomeApp> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
+    return Scaffold(
+      body: Column(
         children: [
           Text("data", style: TextStyle(fontFamily: 'Poppins')),
           Text("data"),
