@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:t_store/features/authentication/screens/login/login.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -20,7 +21,7 @@ class OnboardingController extends GetxController {
   /// update the current index and jump to the next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      // Get.to(const LoginScreen());
+      Get.to(() => const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
