@@ -81,10 +81,6 @@ class HomeScreen extends StatelessWidget {
                     height: TSizes.spaceBtwSections,
                   ),
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 691ceadda5fb589dce69ec0d731e143a1465419a
                   /// Header
                   TSectionHeading(
                     title: 'Popular Categories',
@@ -94,11 +90,6 @@ class HomeScreen extends StatelessWidget {
                     height: TSizes.spaceBtwItems,
                   ),
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6f7d14eae90a1d0c9dd5991e1892531d2874be6c
->>>>>>> 691ceadda5fb589dce69ec0d731e143a1465419a
                   /// Popular Products
                   TGridLayout(
                     itemCount: 6,
