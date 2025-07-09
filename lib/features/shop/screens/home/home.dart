@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:t_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:t_store/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:t_store/common/widgets/images/t_rounded_images.dart';
+import 'package:t_store/common/widgets/layout/grid_layout.dart';
+import 'package:t_store/common/widgets/products/product_carts/product_cart_vertical.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
 import 'package:t_store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:t_store/features/shop/screens/home/widgets/home_categories.dart';
@@ -10,19 +10,18 @@ import 'package:t_store/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             /// Header
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Appbar
@@ -43,10 +42,15 @@ class HomeScreen extends StatelessWidget {
                   Column(
                     children: [
                       /// Heading
-                      TSectionHeading(
-                        title: 'Popular Categories',
-                        showActionButton: false,
-                        textColor: TColors.white,
+                      Padding(
+                        padding: EdgeInsets.only(
+                            left: TSizes.defaultSpace,
+                            right: TSizes.defaultSpace),
+                        child: TSectionHeading(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                          textColor: TColors.white,
+                        ),
                       ),
                       SizedBox(
                         height: TSizes.spaceBtwItems,
@@ -62,12 +66,35 @@ class HomeScreen extends StatelessWidget {
 
             /// Body
             Padding(
-              padding: EdgeInsetsGeometry.all(TSizes.defaultSpace),
-              child: TPromoSlider(
-                banners: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3
+              padding: const EdgeInsetsGeometry.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  /// PromoSlider
+                  const TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(
+                    height: TSizes.spaceBtwSections,
+                  ),
+
+                  /// Header
+                  TSectionHeading(
+                    title: 'Popular Categories',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(
+                    height: TSizes.spaceBtwItems,
+                  ),
+
+                  /// Popular Products
+                  TGridLayout(
+                    itemCount: 6,
+                    itemBuilder: (_, index) => const TProductCartVertical(),
+                  ),
                 ],
               ),
             ),
