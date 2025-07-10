@@ -82,9 +82,12 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   /// Header
-                  TSectionHeading(
-                    title: 'Popular Categories',
-                    onPressed: () {},
+                  Padding(
+                    padding: const EdgeInsets.only(left: TSizes.sm),
+                    child: TSectionHeading(
+                      title: 'Popular Categories',
+                      onPressed: () {},
+                    ),
                   ),
                   const SizedBox(
                     height: TSizes.spaceBtwItems,

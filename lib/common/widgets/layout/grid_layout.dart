@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/common/widgets/products/product_carts/product_cart_vertical.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 
 class TGridLayout extends StatelessWidget {
   const TGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisExtent = 266,
+    this.mainAxisExtent = 265.5,
     required this.itemBuilder,
   });
 
