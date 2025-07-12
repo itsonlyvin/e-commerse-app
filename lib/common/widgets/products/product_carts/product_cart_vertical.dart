@@ -32,7 +32,7 @@ class TProductCartVertical extends StatelessWidget {
         ),
         child: Column(
           children: [
-            TroundedContainer(
+            TRoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(TSizes.sm),
               backgroundColor: dark ? TColors.dark : TColors.light,
@@ -49,7 +49,7 @@ class TProductCartVertical extends StatelessWidget {
                   /// Sale Tag
                   Positioned(
                     top: 12,
-                    child: TroundedContainer(
+                    child: TRoundedContainer(
                       radius: TSizes.sm,
                       backgroundColor:
                           TColors.secondary.withAlpha((255 * 0.8).toInt()),
