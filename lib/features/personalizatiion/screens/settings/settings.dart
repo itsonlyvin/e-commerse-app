@@ -3,13 +3,11 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/widgets/appbar/appbar.dart';
 import 'package:t_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:t_store/common/widgets/images/t_circular_image.dart';
 import 'package:t_store/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:t_store/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:t_store/common/widgets/text/section_heading.dart';
 import 'package:t_store/features/personalizatiion/screens/profile/profile.dart';
 import 'package:t_store/utils/constants/colors.dart';
-import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -23,6 +21,7 @@ class SettingsScreen extends StatelessWidget {
           children: [
             /// Header
             TPrimaryHeaderContainer(
+              showDesignContainer: false,
               child: Column(
                 children: [
                   /// AppBar
@@ -128,7 +127,7 @@ class SettingsScreen extends StatelessWidget {
                     title: 'HD Image Quality',
                     subTitle: 'Set image Quality to be seen',
                     trailing: Switch(
-                      value: false,
+                      value: true,
                       onChanged: (value) {},
                     ),
                   ),

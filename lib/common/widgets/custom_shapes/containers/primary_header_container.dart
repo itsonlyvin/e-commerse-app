@@ -7,8 +7,10 @@ class TPrimaryHeaderContainer extends StatelessWidget {
   const TPrimaryHeaderContainer({
     super.key,
     required this.child,
+    this.showDesignContainer = true,
   });
   final Widget child;
+  final bool showDesignContainer;
   @override
   Widget build(BuildContext context) {
     return TCurvedEdgesWidget(
@@ -19,18 +21,22 @@ class TPrimaryHeaderContainer extends StatelessWidget {
             Positioned(
               top: -150,
               right: -250,
-              child: TCircularContainer(
-                backgroundColor:
-                    TColors.textWhite.withAlpha((255 * 0.1).toInt()),
-              ),
+              child: showDesignContainer
+                  ? TCircularContainer(
+                      backgroundColor:
+                          TColors.textWhite.withAlpha((255 * 0.1).toInt()),
+                    )
+                  : const SizedBox(),
             ),
             Positioned(
               top: 100,
               right: -300,
-              child: TCircularContainer(
-                backgroundColor:
-                    TColors.textWhite.withAlpha((255 * 0.1).toInt()),
-              ),
+              child: showDesignContainer
+                  ? TCircularContainer(
+                      backgroundColor:
+                          TColors.textWhite.withAlpha((255 * 0.1).toInt()),
+                    )
+                  : const SizedBox(),
             ),
             child
           ],

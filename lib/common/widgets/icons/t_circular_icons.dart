@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/utils/constants/colors.dart';
 import 'package:t_store/utils/constants/sizes.dart';
-import 'package:t_store/utils/helpers/helper_functions.dart';
 
 class TCircularIcon extends StatelessWidget {
   const TCircularIcon({
